@@ -8,7 +8,7 @@ st.set_page_config(page_title="My Study App", layout="centered")
 @st.cache_data(ttl=60)
 def load_data():
     # REPLACE THE LINK BELOW WITH YOUR GOOGLE SHEET LINK
-    sheet_url = "https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID_HERE/edit?usp=sharing"
+    sheet_url = "https://docs.google.com/spreadsheets/d/1EfuQE3qvJSZzheX7HzCfy3ESLBB-ilkd-_zYqRB6UHY/edit?gid=0#gid=0"
     
     csv_export_url = sheet_url.replace('/edit?usp=sharing', '/export?format=csv')
     return pd.read_csv(csv_export_url)
